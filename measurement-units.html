@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .parent{
+            width: 400px;
+            background-color: teal;
+            height: 200px;
+        }
+
+        .parent .gold{
+            background-color: gold;
+        }
+        
+        .child{
+            border: 1px solid;
+            padding: 16px;
+            background-color: cyan;
+           /* width: 250px;*/
+           width: 50%;
+            height: 100px;
+        }
+        
+        .parent .red{
+            background-color: red;
+        }
+        .cards .red{
+            border: 2px solid red;
+        }
+        .cards{
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+        .card{
+            border: 1px solid;
+            padding: 16px;
+            display: inline-block;
+        }
+       header li{
+            display: inline-block;
+        }
+
+        
+        .description{
+            border: 1px solid ;
+            padding:16px;
+            padding: 1em;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li> <a  href="#">home</a></li>
+            <li> <a  href="#">about</a></li>
+            <li> <a href="#">contact</a></li>
+        </ul>
+    </nav>
+</header>
+    
+
+<h1>Measurement Units</h1>
+    <ul>
+        <li>px</li>
+        <li>%(doesnot work properly on padding and margin, use it on height and width)</li>
+        <li>em</li>
+        <li>rem</li>
+        <li>vh</li>
+    </ul>
+    parent
+    <div class="parent">
+        <div class="child gold">
+            child
+        </div>
+
+        <div class="child red">
+            child
+        </div>
+    </div>
+
+
+
+
+    <h2>Testimonials</h2>
+    <div class="cards">
+        <div class="card">
+            Ram
+        </div>
+        <div class="card red">
+            Hari
+        </div>
+        <div class="card">
+            Shyam
+        </div>
+    </div>
+    <div class="description">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem in cumque, perferendis odit aspernatur, veritatis dolores suscipit eius deleniti debitis eaque consequuntur maiores, rerum iure quaerat provident ut maxime voluptatum.</p>
+    </div>
+
+</body>
+</html>

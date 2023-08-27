@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .box{
+        height: 100px;
+        width: 100px;
+        border: 1px solid;
+    }
+    #bg-black{
+        background-color: black
+    }
+    div#bg-black{
+        background-color: aqua;
+    }
+
+    body div.red{
+        background-color: red;
+    }
+
+    div.red{
+        background-color: cyan !important;
+    }
+
+    .red{
+        background-color: red !important;
+    }
+    div.box{
+        background-color: green;
+    }
+
+    body div{
+        background-color: antiquewhite;
+    }
+    div{
+        background-color: cyan;
+    }
+
+    div{
+        background-color: red;
+    }
+    
+    
+
+    .red p{
+        color: red;
+    }
+    /*combined selectors */
+    /*and selector */
+    p.red{
+        color: red;
+    }
+
+</style>
+</head>
+<body>
+    <h1>Specificity Score(important > inline-css > id > class > tag)</h1>
+    <div style="background-color: white;" class="box red" id="bg-black">box-1</div>
+    <div class="box">box-2</div>
+    <div class="box">box-3</div>
+    <div class="box">box-4</div>
+    <div class="box">box-5</div>
+<br>
+<br>
+<br>
+    <div class="red">
+        <p class="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, maxime molestias excepturi iusto cum delectus? Consectetur incidunt veniam saepe eius dolores cupiditate. Voluptas nam, aliquid dolorem ut libero accusantium ab.</p>
+    </div>
+
+
+
+<p class="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, maxime molestias excepturi iusto cum delectus? Consectetur incidunt veniam saepe eius dolores cupiditate. Voluptas nam, aliquid dolorem ut libero accusantium ab.</p>
+</body>
+</html>
