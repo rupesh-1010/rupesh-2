@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        
+        .project{
+            border: 1px solid;
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+        .project img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        @media(min-width:640px){
+            .projects{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .project{
+                width: 50%;
+
+            }
+        }
+        @media(min-width:1024px){
+            .projects{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .project{
+                width: 25%;
+
+            }
+        }
+        @media(min-width:1280px){
+            .projects{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .project{
+                width: 20%;
+
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Projects...</h1>
+
+    <div class="projects">
+        <div class="project">
+            <img src="https://picsum.photos/200/300" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime ullam, ipsa expedita consequuntur soluta impedit nisi iure rerum porro praesentium accusamus sed exercitationem quasi, ipsum dolorum, explicabo cumque quisquam!</p>
+        </div>
+
+        <div class="project">
+            <img src="https://picsum.photos/200/300" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime ullam, ipsa expedita consequuntur soluta impedit nisi iure rerum porro praesentium accusamus sed exercitationem quasi, ipsum dolorum, explicabo cumque quisquam!</p>
+        </div>
+        <div class="project">
+            <img src="https://picsum.photos/200/300" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime ullam, ipsa expedita consequuntur soluta impedit nisi iure rerum porro praesentium accusamus sed exercitationem quasi, ipsum dolorum, explicabo cumque quisquam!</p>
+        </div>
+        <div class="project">
+            <img src="https://picsum.photos/200/300" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime ullam, ipsa expedita consequuntur soluta impedit nisi iure rerum porro praesentium accusamus sed exercitationem quasi, ipsum dolorum, explicabo cumque quisquam!</p>
+        </div>
+        <div class="project">
+            <img src="https://picsum.photos/200/300" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime ullam, ipsa expedita consequuntur soluta impedit nisi iure rerum porro praesentium accusamus sed exercitationem quasi, ipsum dolorum, explicabo cumque quisquam!</p>
+        </div>
+      
+    </div>
+
+
+</body>
+</html>

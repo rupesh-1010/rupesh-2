@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           /* background-color: rgba(255, 0, 0 , 0.05); 
+           margin: 0;
+           padding: 0; */
+           box-sizing: border-box;
+        }
+
+       
+        
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;       
+        }
+        .static{
+            position: static;
+        }
+
+        .relative{
+            background-color: wheat;
+            position: relative;
+            left: 100px;
+            
+        }
+
+        .absolute{
+            position: absolute;
+            right: 0;
+            top: 100px;
+            background-color: red;
+
+        }
+
+        .fixed{
+            background-color: orange;
+            position: fixed ;
+            height: 50px;
+            width: 50px;
+            right: 50px;
+            bottom: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%
+
+        }
+
+        .sticky{
+            position: sticky;
+            background-color: teal;
+            top: 200px;
+        }
+        header{
+            position: sticky;
+            top: 0;
+            z-index: 99999;
+        }
+        nav{
+            padding: 1rem;
+            border: 1px solid;
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+            background-color: #333;
+            color: white;
+            
+        
+            
+        }
+
+        
+
+        .parent{
+            border: 2px solid black;
+            padding: 1rem;
+            position: relative;
+        }
+        .small-box{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: blue;
+            right: 0;
+            top: 0;
+        }
+        .two{
+            right: 50px ;
+            z-index:2 ;
+            background-color: rebeccapurple;
+            
+        }
+        .three{
+            right: 100px;
+        }
+        .wrapper{
+            border: 1px solid red;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+    <nav>
+        home about
+    </nav>
+</header> 
+
+    <h1>CSS Positions</h1>
+
+    <div class="box static"> static</div>
+    <div class="box relative">relative</div>
+    <div class="box absolute one">absolute one</div>
+    <div class="box absolute two">absolute two</div>
+    <div class="box absolute three">absolute three</div>
+    <div class="box fixed">fixed</div>
+    <div class="wrapper">
+        <div class="box sticky">sticky</div>
+        <div class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi hic dolorem pariatur ab, voluptatibus corrupti Commodi hic dolorem pariatur ab, voluptatibus corrupti beatae esse fugit debitis facilis nemo fuga accusamus consequatur odit omnis cupiditatCommodi hic dolorem pariatur ab, voluptatibus corrupti beatae esse fugit Commodi hic dolorem pariatur ab, voluptatibus corrupti beatae esse fugit debitis facilis nemo fuga accusamus consequatur odit omnis cupiditatCommodi hic dolorem pariatur ab, voluptatibus corrupti beatae esse fugit debitis facilis nemo fuga accusamus consequatur odit omnis cupiditatCommodi hic dolorem pariatur ab, voluptatibus corrupti beatae esse fugit debitis facilis nemo fuga accusamus consequatur odit omnis cupiditat debitis facilis nemo fuga accusamus consequatur odit omnis cupiditatCommodi hic dolorem pariatur ab, voluptatibus corrupti beatae esse fugit debitis facilis nemo fuga accusamus consequatur odit omnis cupiditatCommodi hic dolorem pariatur ab, voluptatibus corrupti beatae esse fugit debitis facilis nemo fuga accusamus consequatur odit omnis cupiditat beatae esse fugit debitis facilis nemo fuga accusamus consequatur odit omnis cupiditate est. Reprehenderit, maiores.</p>
+        </div>
+    </div>
+    
+
+    <div class="parent">
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi asperiores voluptates libero totam aliquid excepturi laudantium culpa fugit quia velit eveniet deleniti natus, earum, reprehenderit inventore quo expedita, eius est.</p>
+        </div>
+        <div class="box small-box">Parent->box</div>
+    </div>
+
+
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel architecto nisi consequatur molestiae ad reprehenderit, eaque alias perspiciatis cum, enim officiis animi pariatur ducimus repellendus consectetur adipisicing elit.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel architecto nisi consequatur molestiae ad reprehenderit, eaque alias perspiciatis cum, enim officiis animi pariatur ducimus repellendus consectetur adipisicing elit.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel architecto nisi consequatur molestiae ad reprehenderit, eaque alias perspiciatis cum, enim officiis animi pariatur ducimus repellendus consectetur adipisicing elit.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel architecto nisi consequatur molestiae ad reprehenderit, eaque alias perspiciatis cum, enim officiis animi pariatur ducimus repellendus consectetur adipisicing elit.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel architecto nisi consequatur molestiae ad reprehenderit, eaque alias perspiciatis cum, enim officiis animi pariatur ducimus repellendus consectetur adipisicing elit.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel architecto nisi consequatur molestiae ad reprehenderit, eaque alias perspiciatis cum, enim officiis animi pariatur ducimus repellendus consectetur adipisicing elit.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel architecto nisi consequatur molestiae ad reprehenderit, eaque alias perspiciatis cum, enim officiis animi pariatur ducimus repellendus consectetur adipisicing elit.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel architecto nisi consequatur molestiae ad reprehenderit, eaque alias perspiciatis cum, enim officiis animi pariatur ducimus repellendus consectetur adipisicing elit.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel architecto nisi consequatur molestiae ad reprehenderit, eaque alias perspiciatis cum, enim officiis animi pariatur ducimus repellendus consectetur adipisicing elit.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel architecto nisi consequatur molestiae ad reprehenderit, eaque alias perspiciatis cum, enim officiis animi pariatur ducimus repellendus consectetur adipisicing elit.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel architecto nisi consequatur molestiae ad reprehenderit, eaque alias perspiciatis cum, enim officiis animi pariatur ducimus repellendus consectetur adipisicing elit.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel architecto nisi consequatur molestiae ad reprehenderit, eaque alias perspiciatis cum, enim officiis animi pariatur ducimus repellendus consectetur adipisicing elit.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel architecto nisi consequatur molestiae ad reprehenderit, eaque alias perspiciatis cum, enim officiis animi pariatur ducimus repellendus consectetur adipisicing elit.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel architecto nisi consequatur molestiae ad reprehenderit, eaque alias perspiciatis cum, enim officiis animi pariatur ducimus repellendus consectetur adipisicing elit.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel architecto nisi consequatur molestiae ad reprehenderit, eaque alias perspiciatis cum, enim officiis animi pariatur ducimus repellendus consectetur adipisicing elit.</p>
+</body>
+</html>
